@@ -1,0 +1,344 @@
+/******	Jesus Duque - Front End Force Parts 	*********/
+
+<div class="container-fluid rowTemplate" id="cytmp">
+	<div class="row row-eq-height">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="card">
+				<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-menuRed);"><font color="white">Add Platform</font></h5>
+				<div class="card-body">
+					<div id="ComponenteCompleto" style="width:100%">
+						<div id="Izquierdo" style="width:100%; float: center; ">
+							<div class="row" style="width:100%">
+								<div class="col-md-3">
+									<label class="tag">Platform: </label> &nbsp @namePlatform</div>
+							</div>
+						</div>
+					</div>
+					<div class="row margin0px row-eq-height">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p>@instruction</p>
+						</div>
+						<label style="display:NONE" id="NAME" value="HOLA">Hola</label>
+						<hr class="hr-style">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+							<div id="div_Header" class="row margin0px row-eq-height">
+								<div class="col-xs-1 col-sm-1 col-md-1 col-lg-2">
+									<div id="uplo" class="form-group"> @actionload </div>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<div class="form-group"> @importdata </div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="font-size: medium;margin-left: 5%;text-align: center;">
+								<p class="alert alert-warning col-sm-11" role="alert" style="-webkit-text-stroke-width: thin;">Do not forget to use a correct file</p>
+							</div>
+						</div>
+						<hr class="hr-style">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row margin0px row-eq-height">
+								<div id="hostnames" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+<div class="row row-eq-height">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="card">
+			<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-menuRed);"><font color="white">       <div class="row">      <div class="col-1 d-flex justify-content-start align-items-center">       @Back       </div>      <div class="col-10">      Add Chassis      </div>      </div>      </font>      </h5>
+			<div class="card-body">
+				<div class="row margin0px row-eq-height">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>@instruction</p>
+					</div>
+					<label style="display:NONE" id="NAME" value="HOLA">Hola</label>
+					<hr class="hr-style">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div id="div_Header" class="row margin0px row-eq-height">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<div id="uplo" class="form-group"> @actionload </div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-4 col-lg-3">
+								<div class="form-group"> @importdata </div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="font-size: medium;margin-left: 5%;text-align: center;">
+							<p class="alert alert-warning col-sm-11" role="alert" style="-webkit-text-stroke-width: thin;">Do not forget to use a correct file</p>
+						</div>
+					</div>
+					<hr class="hr-style">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="row margin0px row-eq-height">
+							<div id="hostnames" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+<style>
+.cardBody {
+	background-color: #F5F5F5;
+	box-shadow: 13px 10px 8px 1px lightgrey;
+	margin: 10px;
+	height: 90%;
+}
+
+#headDet {
+	width: 120px;
+}
+
+.btnBody {
+	margin: 60px;
+}
+
+#detailsZone {
+	margin-left: 155px;
+}
+
+.cantidadZone {
+	padding: 10px 0px 0px 10px;
+}
+
+.descripZone {
+	width: 200px;
+	padding: 0px 0px 10px 10px;
+}
+
+.canti {
+	color: black;
+	font-size: larger;
+}
+
+.title {
+	color: white;
+	padding-left: 400px;
+	font-weight: bolder;
+	font-size: 27px!important;
+}
+
+.desc {
+	color: black;
+}
+
+.tituloChas {
+	color: #52d1c4;
+	text-align: center;
+	background: linear-gradient(to top, #c7c7c7 0, #e3e0e0 100%);
+	width: 230px;
+	padding: 10px 10px 0px;
+}
+</style>
+<div class="card">
+	<div class="carta animated zoomInUp">
+		<div class="cardBody">
+			<div class="tituloChas">
+				<h4><span style="color: rgb(3,17,21); font-weight: bolder; font-size: 27px!important;">@Chasis</span></h4> </div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+					<div class="descripZone" style="text-align: center;"> <small>@descrip</small> </div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+						<div id="headDet" class="esp">Force Parts: @cantidad</div>
+					</div>
+					<div class="form-group">
+						<label span style="text-align: left;">
+							<div id="detailsZone" class="esp">@details</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+----------------------------------------------------------------------------------------------------------------------------------------------
+<br>
+<div id="lugar" style=\ "text-align:right;\"> @downloadEx &nbsp &nbsp @downloadFile &nbsp &nbsp @adChasi </div>
+<div id="flink" style=\ "text-align:right;\"> @added </div>
+<div id="dplatform" style=\ "text-align:right;\"> @deletePlat </div>
+<div id="flink2" style=\ "text-align:left;\">
+	<br> @_modificar </div>
+----------------------------------------------------------------------------------------------------------------------------------------------
+<div class="container-fluid rowTemplate" id="cytmp">
+	<div class="row row-eq-height">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="card">
+				<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-menuRed);"><font color="white">       <div class="row">      <div class="col-1 d-flex justify-content-start align-items-center">      <label @Back </label>      </div>      <div class="col-10">      @plata      @chas      </div>      </div>      </font>      </h5>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-8 col-lg-8 col-sm-8">
+							<div>@new &nbsp; &nbsp; &nbsp; &nbsp; @update &nbsp; &nbsp; &nbsp; &nbsp; @savec &nbsp; &nbsp; &nbsp; &nbsp; @drawingup &nbsp; &nbsp; &nbsp; &nbsp; @deleteChas
+								<br>
+								<br> </div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-4">
+							<label>@btnImg</label>
+							<label> @saveUP</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-lg-8 col-sm-8">
+							<div id="innerDataRecords"></div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-4"> <img id="fotoChas" class="img-resposive img" src=""> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+----------------------------------------------------------------------------------------------------------------------------------------------
+<div class="container-fluid rowTemplate" id="cytmp">
+	<div class="row row-eq-height">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="card">
+				<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-darkBlue);"><font color="white">       <div class="row">      <div class="col-1 d-flex justify-content-start align-items-center">      <label @Back </label>      </div>      <div class="col-10">      @plata      @chas      </div>      </div>      </font>      </h5>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-8 col-lg-8 col-sm-8">
+							<div> @drawingup </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<div id="innerDataRecords"></div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-6"> <img id="fotoChas" class="img-resposive img" src=""> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+----------------------------------------------------------------------------------------------------------------------------------------------
+<div class="container-fluid rowTemplate" id="cytmp">
+	<div class="row row-eq-height">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="card">
+				<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-darkBlue);"><font color="white">       <div class="row">      <div class="col-1 d-flex justify-content-start align-items-center">      <label @Back </label>      </div>      <div class="col-10">      @plata      @chas      </div>      </div>      </font>      </h5>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-sm-12">
+							<div id="innerListApproved"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+---------------------------------------------------------------------------------------------------------------------------------------------
+<script>
+	"$(\".botonChasis\").css(\"background\", \"var(--cyg-color-lgr-menuRed)\");'+
+						
+
+						'var _btn = document.getElementsByClassName(\"botones\")[0];'+
+						'_btn.classList.remove(\"botones\");'+
+						'_btn.classList.add(\"btnsave\");'+
+						' _btn.style.display =\"block\";'+
+						'document.getElementById(\"saveid\").appendChild(_btn);'+
+						'while(document.getElementsByClassName(\"botones\").length > 0){'+
+						'document.getElementsByClassName(\"botones\")[0].parentNode.removeChild(document.getElementsByClassName(\"botones\")[0]);'+
+						'}'+
+					
+
+						'for (var r=0; r< document.getElementsByClassName(\"fa-arrow-right\").length; r++){'+
+						'document.getElementsByClassName(\"fa-arrow-right\")[r].style.visibility=''hidden'';'+
+						'}'+	
+						
+						
+
+						'var _btnDelete = document.getElementsByClassName(\"btnDelete\")[0];'+
+						'_btnDelete.classList.remove(\"btnDelete\");'+
+						'_btnDelete.classList.add(\"btnDelete2\");'+
+						'$(\".btnDelete2\").css(\"cursor\", \"pointer\");'+
+						' _btnDelete.style.display =\"block\";'+
+						'document.getElementById(\"deletelink\").appendChild(_btnDelete);'+
+						'while(document.getElementsByClassName(\"btnDelete\").length > 0){'+
+						'document.getElementsByClassName(\"btnDelete\")[0].parentNode.removeChild(document.getElementsByClassName(\"btnDelete\")[0]);'+
+						'}'+
+
+						 '$(\".btnDelete2\").hover(function(){'+
+						 '$(this).css(\"background-color\", \"#AB0A0A\");'+
+						 '$(this).css(\"cursor\", \"pointer\");'+
+						 '}, function(){'+
+						 '$(this).css(\"background\", \"#E41A1A\", \"important\").css(\"color\", \"white\");'+
+						'});'+
+
+						'document.getElementsByClassName(\"btnDelete2\")[0].classList.remove(\"pbgTools\");'+
+						'document.getElementsByClassName(\"btnDelete2\")[0].style.cssText  += ''background:#E41A1A; color:white;''; '+
+					
+
+						'var _btnBajar = document.getElementsByClassName(\"count-number\")[0];'+
+						'_btnBajar.classList.remove(\"count-number\");'+
+						'_btnBajar.classList.add(\"bajarNew\");'+
+						' _btnBajar.style.display =\"block\";'+
+						'while(document.getElementsByClassName(\"count-number\").length > 0){'+
+						'document.getElementsByClassName(\"count-number\")[0].parentNode.removeChild(document.getElementsByClassName(\"count-number\")[0]);'+
+						'}'+
+
+					
+
+						'var _btnbajar2 = document.getElementsByClassName(\"bajar2\")[0];'+
+						'_btnbajar2.classList.remove(\"bajar2\");'+
+						'_btnbajar2.classList.add(\"btnBajar\");'+
+						'_btnbajar2.classList.add(\"mr-2\");'+
+						
+						' _btnbajar2.style.display =\"block\";'+
+						'document.getElementById(\"bajarid\").appendChild(_btnbajar2);'+
+						'while(document.getElementsByClassName(\"bajar2\").length > 0){'+
+						'document.getElementsByClassName(\"bajar2\")[0].parentNode.removeChild(document.getElementsByClassName(\"bajar2\")[0]);'+
+						'}'+
+"for(i=0;i<multipleobjcts.hostnames.length;i++){multipleobjcts[\"hostnames\"][i][\"row_action\"]=\"INSERT\";}"
+'settings.newPartno= \"\";'+
+					'$(\"#action\").attr(\"container\",\"recordsData\");'+
+					'$(\".fakeLink\").attr(\"obj\",\"recordsData\");'+
+					'$(\".editf\").css(\"visibility\",\"collapse\");'+
+					'$(\"#recordsData tr > *:nth-child(1)\").hide();'+
+					'$(\"#recordsData tr > *:nth-child(9)\").hide();'+
+					'$(\"#item12\").hide();'+
+					'$(\".btnFlag\").hide();'+
+					'for(let z=0; z<multipleobjcts[\"recordsData\"].length; z++){'+
+						'if( parseInt($(\".clsOH[obj=''recordsData''][item=''\" + getItemtag(''OH'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+(parseInt(z))+\"]\").val())<= parseInt($(\".classmin[obj=''recordsData''][item=''\" + getItemtag(''minimum'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+(parseInt(z))+\"]\").val())) {' +
+							'if($(\".status[obj=''recordsData''][item=''\" + getItemtag(''fmxComment'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+z+\"]\").val()==(\"Approved\")) {' +
+								'$(\".btnFlag[obj=''recordsData''][item=''\" + getItemtag(''iconFlag'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+z+\"]\").show();'+
+							'}'+
+						'}'+
+						'if($(\".numfile[obj=''recordsData''][item=''\" + getItemtag(''countflag'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+z+\"]\").val()==1) {' +
+							'$(\".btnFlag[obj=''recordsData''][item=''\" + getItemtag(''iconFlag'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+z+\"]\").css(\"background-color\", \"green\", \"!important\").css(\"color\", \"white\");'+
+							'$(\".btnFlag[obj=''recordsData''][item=''\" + getItemtag(''iconFlag'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+z+\"]\").removeClass(\"pbgTools\");'+
+							'$(\".btnFlag[obj=''recordsData''][item=''\" + getItemtag(''iconFlag'',multipleobjctsHeader[''recordsData'']) + \"''][objid=\"+z+\"]\").val(\"Ordered\")'+
+						'}'+
+					'}'+
+	'innerajaxcall(0,\"recordsData\",\"#innerDataRecords\");'+
+									'$(\".saveChangeItems\").hide();'+	
+									'$(\".myAttachbtn \").hide();'+
+									'$(\".count-files \").hide();'+
+
+									'let imgChas = document.querySelector(\"#fotoChas\");' +
+									'fotoChas.src = \"'+@strPath+'";' +
+										
+									'document.querySelector(\".saveImg\").classList.add(\"d-none\");'+
+
+									'var _btnDraw = document.getElementsByClassName(\"myAttachbtn\")[0];'+
+									'_btnDraw.classList.add(\"ImgUp\");'+
+									
+									'const imgInput = document.querySelector(\".uploadFiles[item=''\"+ getItemtag(\"drawingup\") +\"'']\");' +
+									'imgInput.addEventListener(\"change\", function() {'+ 
+									'const reader = new FileReader();' +
+									'reader.addEventListener(\"load\", () => {' +
+									'const uploaded_image = reader.result;' +
+									'imgChas.src = uploaded_image;' +
+
+						'});' +
+								'reader.readAsDataURL(this.files[0]);' +
+					'});' +
+</script>

@@ -1,0 +1,259 @@
+/**	Jesus Duque - LogNPOS	**/
+
+<style>
+#apartado1 {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#idtimeline > .timeline {
+	justify-content: center;
+}
+
+.timeline > .col-xs-12 >.timeline-stage-title {
+	justify-content: center;
+}
+</style>
+<div id="cytmp" class="template">
+	<div style="width:100%;">
+		<div class="card">
+			<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-menuGreen);"><font color="white">       <div class="row">      <div class="col-1 d-flex justify-content-start align-items-center"> <label @Back </label>  </div> <div class="col-10">  REQUERIMENT  </div> </div> </font> </h5>
+			<div class="card-body" align="left">
+				<div id="ComponenteCompleto" style="width:100%">
+					<div id="Izquierdo" style="width:100%; float: left; ">
+						<div class="row" style="width:100%">
+							<div class="form-group col-md-4">
+								<label class="tag">Employee #:</label>@NoReloj</div>
+							<div class="hideMed form-group col-md-4">
+								<label class="tag">First:</label>@Nombre</div>
+							<div class="hideMed form-group col-md-4">
+								<label class="tag">Last:</label>@ApPaterno</div>
+							<div class="hideMed form-group col-md-4">
+								<label class="tag">Second:</label>@ApMaterno</div>
+							<div class="form-group col-md-4">
+								<label class="tag">Department:</label>@depa </div>
+							<div class="form-group col-md-4">
+								<label class="tag">Supervisor:</label>@Supervisor</div>
+							<div id="npo" class="form-group col-md-4">
+								<label class="tag">NPO:</label>@npo</div>
+							<div class="form-group col-md-8">
+								<label class="tag">PDF of NPO: &nbsp </label>@pdfNPO</div>
+							<div class="form-group col-md-4">
+								<label class="tag">Remarks:</label>@remarks</div>
+							<div class="form-group col-md-8">
+								<label class="tag">Backup of NPO:</label>@DragAndDropS</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div align="center" style="width:120%; margin-left:15%" id="idtimeline">
+				<div align="center"> @timeline </div>
+			</div>
+			<br>
+			<div style="text-align:right;"> @save &nbsp </div>
+		</div>
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+<style>
+#apartado1 {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.btnOM:hover {
+	width: 190px;
+}
+
+li {
+	width: 170px;
+	transition: width 600ms;
+	transition-delay: 1ms;
+}
+
+.hr-style {
+	width: 98%;
+	height: 3px;
+	margin: 5px auto !important;
+	background-image: linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+}
+
+#idtimeline > .timeline {
+	justify-content: center;
+}
+
+.timeline > .col-xs-12 >.timeline-stage-title {
+	justify-content: center;
+}
+
+.nav-duque {
+	display: block;
+	padding: 0.5rem!important;
+}
+
+.labelOM {
+	width: 230px;
+	color: white;
+	margin: 20px;
+	box-sizing: border-box;
+	border-width: 3px;
+	border-style: solid;
+	border-color: green;
+	padding: 15px;
+	border-radius: 5px;
+	background: #00816A;
+	display: inline-block;
+}
+
+li:hover {
+	width: 190px;
+	background-color: rgb(196, 248, 187);
+}
+</style>
+<div id="cytmp" class="template">
+	<div style="width:100%;">
+		<div class="card">
+			<h5 class="card-header" align="center" style="background: var(--cyg-color-lgr-menuGreen);"><font color="white">       <div class="row">      <div class="col-1 d-flex justify-content-start align-items-center"> <label @Back </label>  </div> <div class="col-10"> NPO: @npoTitle  </div> </div> </font> </h5>
+			<div class="card-body" align="left">
+				<ul class="nav nav-tabs" id="ChangeRequestContentTab" role="tablist">
+					<li class="nav-item Requirement-nav"><a class="nav-link p-2 text-sm active" id="Requirement-tab" data-toggle="tab" href="#RequirementContent" role="tab" aria-controls="RequirementContent" aria-selected="true">Requirement</a></li>
+					<li class="nav-item OM-nav"><a class="nav-link p-2 text-sm" id="OM-tab" data-toggle="tab" href="#OMContent" role="tab" aria-controls="OMContent" aria-selected="true">OM</a></li>
+					<li class="nav-item SAP-nav"><a class="nav-link p-2 text-sm" id="SAP-tab" data-toggle="tab" href="#SAPContent" role="tab" aria-controls="SAPContent" aria-selected="false">SAP</a></li>
+					<li class="nav-item CM-nav"><a class="nav-link p-2 text-sm" id="CM-tab" data-toggle="tab" href="#CMContent" role="tab" aria-controls="CMContent" aria-selected="false">CM</a></li>
+					<li class="nav-item WH/QA-nav"><a class="nav-link p-2 text-sm" id="WH/QA-tab" data-toggle="tab" href="#WH/QAContent" role="tab" aria-controls="WH/QAContent" aria-selected="false">WH/QA</a></li>
+					<li class="nav-item HRP HR-nav"><a class="nav-link p-2 text-sm" id="HR-tab" data-toggle="tab" href="#HRContent" role="tab" aria-controls="HRContent" aria-selected="false">HR</a></li>
+				</ul>
+				<div id="ComponenteCompleto" style="width:100%">
+					<div id="Izquierdo" style="width:100%; float: left; ">
+						<div class="btnrequer">
+							<div class="row" style="width:100%">
+								<div class="form-group col-md-4">
+									<label class="tag">Employee #:</label>@NoReloj</div>
+								<div class="hideMed form-group col-md-4">
+									<label class="tag">First:</label>@Nombre</div>
+								<div class="hideMed form-group col-md-4">
+									<label class="tag">Last:</label>@ApPaterno</div>
+								<div class="hideMed form-group col-md-4">
+									<label class="tag">Second:</label>@ApMaterno</div>
+								<div class="form-group col-md-4">
+									<label class="tag">Department:</label>@depa </div>
+								<div class="form-group col-md-4">
+									<label class="tag">Supervisor:</label>@Supervisor</div>
+								<div id="npo" class="form-group col-md-4">
+									<label class="tag">NPO:</label>@npo</div>
+								<div class="form-group col-md-8">
+									<label class="tag">PDF of NPO: &nbsp; </label>@pdfNPO</div>
+								<div class="form-group col-md-4">
+									<label class="tag">Remarks:</label>@remarks</div>
+								<div class="form-group col-md-8">
+									<label class="tag">Backup of NPO:</label>@DragAndDropS</div>
+							</div>
+						</div>
+						<div class="row btnOM" style="width:100%">
+							<div class="form-group col-md-8">
+								<label class="tag">Description:</label>@descrip </div>
+							<div class="form-group col-md-12" align="center">
+								<br>
+								<label class="tag omText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Select one option:</label>
+								<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="green">  <label class="omApproved labelOM fas fa-check-square"> Approved </label></font> @btnAprovOM &nbsp; @btnRejectOM
+								<br>
+								<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<label class="omRejected labelRej fas fa-check-square"> Rejected </label>
+							</div>
+							<br> </div>
+						<div class="row btnSAP" style="width:100%">
+							<div class="form-group col-md-12">
+								<br>
+								<div id="innerDataRecords"></div>
+								<br>
+								<br> </div>
+						</div>
+						<br>
+						<div class="row btnCM" style="width:100%">
+							<div class="form-group col-md-3">
+								<label class="tag">Material will come out:</label>
+								<br> @materialWill </div>
+							<div class="form-group col-md-3">
+								<label class="tag">No. Investment:</label> @noInvest </div>
+							<div class="form-group col-md-3">
+								<label class="tag">Expense of investment:</label> @expInvest </div>
+							<div class="form-group col-md-3">
+								<label class="tag">Cost Happened in:</label> @costHappen </div>
+						</div>
+						<div class="form-group col-md-9">
+							<br>
+							<div id="innerData"></div>
+						</div>
+						<br>
+						<div class="row CMstatus" style="width:100%">
+							<div class="form-group col-md-3">
+								<label class="tag">Status:</label> @status </div>
+						</div>
+						<div class="row btnHR" style="width:100%">
+							<div class="form-group col-md-12">
+								<br>
+								<div id="innerDataHR"></div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<label class="tag" style="padding-top: 10px; color: #396;">Approvals</label>
+							<hr class="hr-style"> </div>
+						<div align="center" style="width: 120%;margin-left: 15%;" id="idtimeline">
+							<div align="center"> @timeline </div>
+						</div>
+						<br>
+						<div style="text-align:right;"> @save @saveCM @saveHR &nbsp; </div>
+					</div>
+					<br>
+					<br> </div>
+				<br> 
+	</div>
+----------------------------------------------------------------------------------------------------------------------------------------------
+<Script>
+	$(\".editable[objID=''0''][item=''\"+getItemtag(\"NoReloj\")+\"'']\").focus();
+	'while(document.getElementsByClassName(\"cyg_rowfileup\").length > 0){'+
+						'document.getElementsByClassName(\"cyg_rowfileup\")[0].parentNode.removeChild(document.getElementsByClassName(\"cyg_rowfileup\")[0]);'+
+						'};'+
+						'document.querySelector(\".btnsaved\").classList.add(\"d-none\");'
+'document.querySelector(\"#OM-tab\").removeAttribute(\"href\");'+
+				'document.querySelector(\"#OM-tab\").classList.remove(\"nav-link\",\"p-2\");'+
+				'document.querySelector(\"#OM-tab\").classList.add(\"nav-duque\");'+
+
+				'document.querySelector(\"#WH\\\\/QA-tab\").removeAttribute(\"href\");'+
+				'document.querySelector(\"#WH\\\\/QA-tab\").classList.remove(\"nav-link\",\"p-2\");'+
+				'document.querySelector(\"#WH\\\\/QA-tab\").classList.add(\"nav-duque\");'+
+
+				'document.querySelector(\"#HR-tab\").removeAttribute(\"href\");'+
+				'document.querySelector(\"#HR-tab\").classList.remove(\"nav-link\",\"p-2\");'+
+				'document.querySelector(\"#HR-tab\").classList.add(\"nav-duque\");'+
+
+				'document.querySelector(\"#SAP-tab\").removeAttribute(\"href\");'+
+				'document.querySelector(\"#SAP-tab\").classList.remove(\"nav-link\",\"p-2\");'+
+				'document.querySelector(\"#SAP-tab\").classList.add(\"nav-duque\");'+
+
+				'document.querySelector(\"#CM-tab\").removeAttribute(\"href\");'+
+				'document.querySelector(\"#CM-tab\").classList.remove(\"nav-link\",\"p-2\");'+
+				'document.querySelector(\"#CM-tab\").classList.add(\"nav-duque\");
+
+'if (document.querySelectorAll(\".count-number[obj=''CMData'']\").length != 0){  '+				
+	
+						'for (let r=0; r<document.getElementsByClassName(\"comboBZP\").length; r++){'+ 
+								'if(document.getElementsByClassName(\"comboBZP\")[r].value==(\"No\") || document.getElementsByClassName(\"comboBZP\")[r].value ==(\"\")){  '+
+								'document.getElementsByClassName(\"myAttachbtn\")[r*4].classList.add(\"d-none\");'+
+								 'document.querySelectorAll(\".count-number[obj=''CMData'']\")[r*4].classList.add(\"d-none\");'+
+
+								 'document.getElementsByClassName(\"myAttachbtn\")[r*4+1].classList.add(\"d-none\");'+
+								 'document.querySelectorAll(\".count-number[obj=''CMData'']\")[r*4+1].classList.add(\"d-none\");'+
+
+								 'document.getElementsByClassName(\"myAttachbtn\")[r*4+2].classList.add(\"d-none\");'+
+								 'document.querySelectorAll(\".count-number[obj=''CMData'']\")[r*4+2].classList.add(\"d-none\");'+
+
+								 'document.getElementsByClassName(\"myAttachbtn\")[r*4+3].classList.add(\"d-none\");'+
+								 'document.querySelectorAll(\".count-number[obj=''CMData'']\")[r*4+3].classList.add(\"d-none\");'+
+								'}'+
+							
+						'}'+
+
+							
+					'}'
+
+</Script>
